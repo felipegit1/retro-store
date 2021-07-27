@@ -1,24 +1,20 @@
 const { Schema, model } = require("mongoose");
 
-const nftSchema = Schema(
+const userSchema = Schema(
   {
-    title: {
+    name: {
       type: String,
       required: true,
     },
-    description: {
+    lastName: {
       type: String,
       required: true,
     },
-    image: {
+    email: {
       type: String,
       required: true,
     },
-    token: {
-      type: String,
-      required: true,
-    },
-    type: {
+    password: {
       type: String,
       required: true,
     },
@@ -26,4 +22,4 @@ const nftSchema = Schema(
   { timestamps: true, versionKey: false }
 );
 
-module.exports = model("nft", nftSchema);
+module.exports = model("user", userSchema);
