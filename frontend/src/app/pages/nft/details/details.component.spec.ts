@@ -1,24 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SignupComponent } from './signup.component';
+import { DetailsNftComponent } from './details.component';
 
-describe('SignupComponent', () => {
-  let component: SignupComponent;
-  let fixture: ComponentFixture<SignupComponent>;
+describe('DetailsComponent', () => {
+  let component: DetailsNftComponent;
+  let fixture: ComponentFixture<DetailsNftComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SignupComponent ]
+      declarations: [ DetailsNftComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SignupComponent);
+    fixture = TestBed.createComponent(DetailsNftComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-    
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
